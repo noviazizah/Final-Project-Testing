@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.sparta.swaglabs.pom.ProductsPageTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.237 s <<< FAILURE! - in com.sparta.swaglabs.pom.ProductsPageTests
+checkTwitterLinkRedirectsToTwitter  Time elapsed: 26.193 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".social_twitter"}
+  (Session info: chrome=125.0.6422.113)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-GCCS8U66', ip: '192.168.100.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\novia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1d9b417494c88b0ce11f45a2058dc5c
+*** Element info: {Using=css selector, value=.social_twitter}
+	at com.sparta.swaglabs.pom.ProductsPageTests.checkTwitterLinkRedirectsToTwitter(ProductsPageTests.java:36)
+

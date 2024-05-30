@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.sparta.swaglabs.cucumber.RunTests
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 220.748 s <<< FAILURE! - in com.sparta.swaglabs.cucumber.RunTests
+As a user, I want to sort products by name {A-Z}  Time elapsed: 4.909 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<N[AME (A TO] Z)> but was:<N[ame (A to] Z)>
+
+As a user, I want to sort products by name {Z-A}  Time elapsed: 6.673 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<N[AME (Z TO] A)> but was:<N[ame (Z to] A)>
+
+As a user, I want to sort products by price {low-high}  Time elapsed: 5.502 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<P[RICE (LOW TO HIGH])> but was:<P[rice (low to high])>
+
+As a user, I want to sort products by price {high-low}  Time elapsed: 4.029 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<P[RICE (HIGH TO LOW])> but was:<P[rice (high to low])>
+
+As a user, I want to go to the company's Twitter page  Time elapsed: 11.238 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+

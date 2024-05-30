@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sparta.swaglabs.cucumber.RunTests" time="220.748" tests="32" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\target\test-classes;D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\target\classes;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0\junit-jupiter-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0\junit-jupiter-api-5.8.0.jar;C:\Users\novia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0\junit-platform-commons-1.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0\junit-jupiter-params-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0\junit-jupiter-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\novia\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\novia\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\novia\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\novia\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\novia\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\novia\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\novia\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\novia\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\novia\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-java\6.11.0\cucumber-java-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-core\6.11.0\cucumber-core-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin\6.11.0\cucumber-gherkin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.11.0\cucumber-gherkin-messages-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\novia\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-plugin\6.11.0\cucumber-plugin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\docstring\6.11.0\docstring-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\novia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0\cucumber-picocontainer-7.0.0.jar;C:\Users\novia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-junit\6.11.0\cucumber-junit-6.11.0.jar;C:\Users\novia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\novia\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.0\junit-vintage-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0\junit-platform-engine-1.8.0.jar;"/>
+    <property name="java.vm.vendor" value="OpenLogic"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openlogic.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\novia\AppData\Local\Temp\surefire4928562023708127124\surefirebooter11403873776345061431.jar C:\Users\novia\AppData\Local\Temp\surefire4928562023708127124 2024-05-27T20-15-32_607-jvmRun1 surefire14477536503318735259tmp surefire_08645030445078167278tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\target\test-classes;D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\target\classes;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0\junit-jupiter-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0\junit-jupiter-api-5.8.0.jar;C:\Users\novia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0\junit-platform-commons-1.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0\junit-jupiter-params-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0\junit-jupiter-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\novia\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\novia\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\novia\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\novia\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\novia\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\novia\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\novia\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\novia\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\novia\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-java\6.11.0\cucumber-java-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-core\6.11.0\cucumber-core-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin\6.11.0\cucumber-gherkin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.11.0\cucumber-gherkin-messages-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\novia\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-plugin\6.11.0\cucumber-plugin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\docstring\6.11.0\docstring-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\novia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0\cucumber-picocontainer-7.0.0.jar;C:\Users\novia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-junit\6.11.0\cucumber-junit-6.11.0.jar;C:\Users\novia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\novia\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.0\junit-vintage-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0\junit-platform-engine-1.8.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\novia"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\novia\AppData\Local\Temp\surefire4928562023708127124\surefirebooter11403873776345061431.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.19+7-adhoc..jdk11u"/>
+    <property name="user.name" value="novia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="OpenLogic-OpenJDK"/>
+    <property name="localRepository" value="C:\Users\novia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://techsupport.roguewave.com/"/>
+    <property name="java.io.tmpdir" value="C:\Users\novia\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.19"/>
+    <property name="user.dir" value="D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin;C:\apache-maven-3.9.2\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\xampp\php;C:\composer;C:\xampp\php-8.0.30;C:\ProgramData\ComposerSetup\bin;C:\apache-maven-3.9.2\bin;C:\Users\novia\Downloads\apache-maven-3.9.5-bin\apache-maven-3.9.5\bin;C:\Users\novia;C:\Program Files\Docker\Docker\resources\bin;C:\Gradle\gradle-8.7\bin;C:\Gradle\gradle-8.7\bin;C:\Users\novia\AppData\Local\Programs\Python\Python311\;C:\Users\novia\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\novia\AppData\Local\Microsoft\WindowsApps;C:\Users\novia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\novia\AppData\Roaming\npm;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\novia\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.4\bin;;D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\src\test\resources\chromedriver.exe;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="OpenLogic"/>
+    <property name="java.vm.version" value="11.0.19+7-adhoc..jdk11u"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="As a user, I want to add items to the shopping cart" classname="com.sparta.swaglabs.cucumber.RunTests" time="8.973"/>
+  <testcase name="Checkout from the cart page" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.42"/>
+  <testcase name="Submit all shipping details" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.059"/>
+  <testcase name="First name is missing from shipping details" classname="com.sparta.swaglabs.cucumber.RunTests" time="3.841"/>
+  <testcase name="Finalise checkout" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.032"/>
+  <testcase name="Edit shipping details from the Checkout Overview page" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.688"/>
+  <testcase name="As a user, I want to sort products by name {A-Z}" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.909">
+    <failure message="expected:&lt;N[AME (A TO] Z)&gt; but was:&lt;N[ame (A to] Z)&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<N[AME (A TO] Z)> but was:<N[ame (A to] Z)>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: As a user, I want to sort products by name (A-Z)                &amp#27;[90m# src/test/resources/features/filterProducts.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the Products page&amp#27;[0m                                         &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the filter dropdown&amp#27;[0m                                     &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheFilterDropdown()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on the "Name (A to Z)" dropdown option&amp#27;[0m                      &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheNameAToZDropdownOption()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe filter option should display "NAME (A TO Z)"&amp#27;[0m                   &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayNAMEATOZ()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<N[AME (A TO] Z)> but was:<N[ame (A to] Z)>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayNAMEATOZ(FilterProductsSteps.java:58)
+	at âœ½.The filter option should display "NAME (A TO Z)"(file:///D:/KULIAH/SEMESTER%206/PPL%20(PR)/SwagLabsTesting/src/test/resources/features/filterProducts.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe products should be displayed alphabetically, in ascending order&amp#27;[0m &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theProductsShouldBeDisplayedAlphabeticallyInAscendingOrder()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 15091
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 27, 2024 8:16:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1716815800.286][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I want to sort products by name {Z-A}" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.673">
+    <failure message="expected:&lt;N[AME (Z TO] A)&gt; but was:&lt;N[ame (Z to] A)&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<N[AME (Z TO] A)> but was:<N[ame (Z to] A)>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: As a user, I want to sort products by name (Z-A)                 &amp#27;[90m# src/test/resources/features/filterProducts.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the Products page&amp#27;[0m                                          &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the filter dropdown&amp#27;[0m                                      &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheFilterDropdown()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on the "Name (Z to A)" dropdown option&amp#27;[0m                       &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheNameZToADropdownOption()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe filter option should display "NAME (Z TO A)"&amp#27;[0m                    &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayNAMEZTOA()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<N[AME (Z TO] A)> but was:<N[ame (Z to] A)>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayNAMEZTOA(FilterProductsSteps.java:63)
+	at âœ½.The filter option should display "NAME (Z TO A)"(file:///D:/KULIAH/SEMESTER%206/PPL%20(PR)/SwagLabsTesting/src/test/resources/features/filterProducts.feature:15)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe products should be displayed alphabetically, in descending order&amp#27;[0m &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theProductsShouldBeDisplayedAlphabeticallyInDescendingOrder()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 33145
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 27, 2024 8:16:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1716815806.897][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I want to sort products by price {low-high}" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.502">
+    <failure message="expected:&lt;P[RICE (LOW TO HIGH])&gt; but was:&lt;P[rice (low to high])&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<P[RICE (LOW TO HIGH])> but was:<P[rice (low to high])>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: As a user, I want to sort products by price (low-high)    &amp#27;[90m# src/test/resources/features/filterProducts.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the Products page&amp#27;[0m                                   &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the filter dropdown&amp#27;[0m                               &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheFilterDropdown()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "Price (low to high)" dropdown option&amp#27;[0m              &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnPriceLowToHighDropdownOption()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe filter option should display "PRICE (LOW TO HIGH)"&amp#27;[0m       &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayPRICELOWTOHIGH()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<P[RICE (LOW TO HIGH])> but was:<P[rice (low to high])>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayPRICELOWTOHIGH(FilterProductsSteps.java:68)
+	at âœ½.The filter option should display "PRICE (LOW TO HIGH)"(file:///D:/KULIAH/SEMESTER%206/PPL%20(PR)/SwagLabsTesting/src/test/resources/features/filterProducts.feature:21)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe products should be displayed by price, in ascending order&amp#27;[0m &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theProductsShouldBeDisplayedByPriceInAscendingOrder()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 59592
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 27, 2024 8:16:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1716815812.532][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I want to sort products by price {high-low}" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.029">
+    <failure message="expected:&lt;P[RICE (HIGH TO LOW])&gt; but was:&lt;P[rice (high to low])&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<P[RICE (HIGH TO LOW])> but was:<P[rice (high to low])>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: As a user, I want to sort products by price (high-low)     &amp#27;[90m# src/test/resources/features/filterProducts.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the Products page&amp#27;[0m                                    &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the filter dropdown&amp#27;[0m                                &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnTheFilterDropdown()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "Price (high to low)" dropdown option&amp#27;[0m               &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.iClickOnPriceHighToLowDropdownOption()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe filter option should display "PRICE (HIGH TO LOW)"&amp#27;[0m        &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayPRICEHIGHTOLOW()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<P[RICE (HIGH TO LOW])> but was:<P[rice (high to low])>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theFilterOptionShouldDisplayPRICEHIGHTOLOW(FilterProductsSteps.java:73)
+	at âœ½.The filter option should display "PRICE (HIGH TO LOW)"(file:///D:/KULIAH/SEMESTER%206/PPL%20(PR)/SwagLabsTesting/src/test/resources/features/filterProducts.feature:27)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe products should be displayed by price, in descending order&amp#27;[0m &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FilterProductsSteps.theProductsShouldBeDisplayedByPriceInDescendingOrder()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 28146
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 27, 2024 8:16:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I want to go to the company&apos;s Twitter page" classname="com.sparta.swaglabs.cucumber.RunTests" time="11.238">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: As a user, I want to go to the company's Twitter page &amp#27;[90m# src/test/resources/features/footer.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user is logged in&amp#27;[0m                                   &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FooterSteps.theUserIsLoggedIn()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the Twitter icon&amp#27;[0m                              &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FooterSteps.iClickOnTheTwitterIcon()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should be redirected to the company's Twitter profile&amp#27;[0m  &amp#27;[90m# com.sparta.swaglabs.cucumber.stepdefs.FooterSteps.iShouldBeRedirectedToTheCompanySTwitterProfile()&amp#27;[0m
+      &amp#27;[31morg.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at com.sparta.swaglabs.cucumber.stepdefs.FooterSteps.iShouldBeRedirectedToTheCompanySTwitterProfile(FooterSteps.java:44)
+	at âœ½.I should be redirected to the company's Twitter profile(file:///D:/KULIAH/SEMESTER%206/PPL%20(PR)/SwagLabsTesting/src/test/resources/features/footer.feature:8)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 60519
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 27, 2024 8:17:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I want to go the company&apos;s Facebook page" classname="com.sparta.swaglabs.cucumber.RunTests" time="8.146"/>
+  <testcase name="As a user, I want to go to the company&apos;s Linkedin page" classname="com.sparta.swaglabs.cucumber.RunTests" time="9.288"/>
+  <testcase name="As a user, I want to see all products" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.94"/>
+  <testcase name="As a user, I want to view more about the company" classname="com.sparta.swaglabs.cucumber.RunTests" time="32.477"/>
+  <testcase name="As a user, I want to log out" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.962"/>
+  <testcase name="As a user, I want to clear the cart" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.11"/>
+  <testcase name="Missing username" classname="com.sparta.swaglabs.cucumber.RunTests" time="7.185"/>
+  <testcase name="Missing password" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.162"/>
+  <testcase name="Correct username and correct password" classname="com.sparta.swaglabs.cucumber.RunTests" time="3.602"/>
+  <testcase name="Correct username and incorrect password" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.931"/>
+  <testcase name="Incorrect username and correct password" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.037"/>
+  <testcase name="Incorrect username and incorrect password" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.83"/>
+  <testcase name="User is locked out" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.814"/>
+  <testcase name="As a user, I want to remove an item from the cart from the products page" classname="com.sparta.swaglabs.cucumber.RunTests" time="5.161"/>
+  <testcase name="As a user, I want to remove an item from the cart from the cart inventory page" classname="com.sparta.swaglabs.cucumber.RunTests" time="8.745"/>
+  <testcase name="As a user I want to see the contents of my shopping cart" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.96"/>
+  <testcase name="As a user I want to see the details of the items in my shhopping cart" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.653"/>
+  <testcase name="View product listings on the Products page" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.512"/>
+  <testcase name="Navigating to a product page by clicking the product image" classname="com.sparta.swaglabs.cucumber.RunTests" time="4.832"/>
+  <testcase name="Navigating to a product page by clicking the product name" classname="com.sparta.swaglabs.cucumber.RunTests" time="3.581"/>
+  <testcase name="Viewing a unique image for each product" classname="com.sparta.swaglabs.cucumber.RunTests" time="6.644"/>
+</testsuite>
