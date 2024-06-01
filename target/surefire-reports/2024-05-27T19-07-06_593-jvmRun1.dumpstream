@@ -62,39 +62,39 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at com.sparta.swaglabs.pom.util.DriverFactory.getDriver(DriverFactory.java:14)
-	at com.sparta.swaglabs.cucumber.stepdefs.StepDefManager.setup(StepDefManager.java:39)
+	at swaglabs.pom.util.DriverFactory.getDriver(DriverFactory.java:14)
+	at swaglabs.cucumber.stepdefs.StepDefManager.setup(StepDefManager.java:39)
 [0m
 
 
 # Created at 2024-05-27T19:09:47.705
-Unexpected IOException with stream:   [36mGiven [0m[36mI am on the Products page[0m                                   [90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()[0m
+Unexpected IOException with stream:   [36mGiven [0m[36mI am on the Products page[0m                                   [90m# swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()[0m
 
 
 # Created at 2024-05-27T19:09:47.707
-Unexpected IOException with stream:   [36mGiven [0m[36mThere is at least one product on the Products page[0m          [90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.thereIsAtLeastOneProductOnTheProductsPage()[0m
+Unexpected IOException with stream:   [36mGiven [0m[36mThere is at least one product on the Products page[0m          [90m# swaglabs.cucumber.stepdefs.ViewProductsSteps.thereIsAtLeastOneProductOnTheProductsPage()[0m
 
 
 # Created at 2024-05-27T19:09:47.708
-Unexpected IOException with stream:   [36mWhen [0m[36mI click on the product name[0m                                  [90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iClickOnTheProductName()[0m
+Unexpected IOException with stream:   [36mWhen [0m[36mI click on the product name[0m                                  [90m# swaglabs.cucumber.stepdefs.ViewProductsSteps.iClickOnTheProductName()[0m
 
 
 # Created at 2024-05-27T19:09:47.709
-Unexpected IOException with stream:   [36mThen [0m[36mI go to the product page[0m                                     [90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iGoToTheProductPage()[0m
+Unexpected IOException with stream:   [36mThen [0m[36mI go to the product page[0m                                     [90m# swaglabs.cucumber.stepdefs.ViewProductsSteps.iGoToTheProductPage()[0m
 
 
 # Created at 2024-05-27T19:09:47.710
 Unexpected IOException with stream:       [31mjava.lang.NullPointerException
-	at com.sparta.swaglabs.cucumber.stepdefs.StepDefManager.teardownAll(StepDefManager.java:51)
+	at swaglabs.cucumber.stepdefs.StepDefManager.teardownAll(StepDefManager.java:51)
 [0m
 
 
 # Created at 2024-05-27T19:09:47.713
-Unexpected IOException: 8,1,com.sparta.swaglabs.cucumber.RunTests,Navigating to a product page by clicking the product name,null,Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,null,Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,RunTests Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,org.opentest4j.MultipleFailuresError: \000AMultiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>\000A
+Unexpected IOException: 8,1,swaglabs.cucumber.RunTests,Navigating to a product page by clicking the product name,null,Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,null,Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,RunTests Multiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>,org.opentest4j.MultipleFailuresError: \000AMultiple Failures (2 failures)\000D\000A\0009org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 95\000ACurrent browser version is 124.0.6367.209 with binary path C:\005CProgram Files\005CGoogle\005CChrome\005CApplication\005Cchrome.exe\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-GCCS8U66'\002C ip: '192.168.100.171'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.19'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00E40C43+2493507]\000A\0009Ordinal0 [0x00DDA4B1+2073777]\000A\0009Ordinal0 [0x00CE2608+1058312]\000A\0009Ordinal0 [0x00D00771+1181553]\000A\0009Ordinal0 [0x00CFC57B+1164667]\000A\0009Ordinal0 [0x00CF9DCF+1154511]\000A\0009Ordinal0 [0x00D29F0F+1351439]\000A\0009Ordinal0 [0x00D29B7A+1350522]\000A\0009Ordinal0 [0x00D2580B+1333259]\000A\0009Ordinal0 [0x00D02314+1188628]\000A\0009Ordinal0 [0x00D0316F+1192303]\000A\0009GetHandleVerifier [0x00FC7BF6+1548950]\000A\0009GetHandleVerifier [0x0107461C+2256060]\000A\0009GetHandleVerifier [0x00ECC13B+518107]\000A\0009GetHandleVerifier [0x00ECB1E0+514176]\000A\0009Ordinal0 [0x00DDF53D+2094397]\000A\0009Ordinal0 [0x00DE3418+2110488]\000A\0009Ordinal0 [0x00DE3552+2110802]\000A\0009Ordinal0 [0x00DECE81+2150017]\000A\0009BaseThreadInitThunk [0x769C7BA9+25]\000A\0009RtlInitializeExceptionChain [0x7768BE3B+107]\000A\0009RtlClearBits [0x7768BDBF+191]\000A\000D\000A\0009java.lang.NullPointerException: <no message>\000A
 
 
 # Created at 2024-05-27T19:09:47.714
-Unexpected IOException: 5,1,com.sparta.swaglabs.cucumber.RunTests,Viewing a unique image for each product,null,null,null
+Unexpected IOException: 5,1,swaglabs.cucumber.RunTests,Viewing a unique image for each product,null,null,null
 
 
 # Created at 2024-05-27T19:09:47.722
@@ -469,7 +469,8 @@ Unexpected IOException with stream: 0
 Unexpected IOException with stream: 4
 
 # Created at 2024-05-27T19:09:47.888
-Unexpected IOException with stream: 
+Unexpected IOException with stream: 
+
 
 # Created at 2024-05-27T19:09:47.889
 Unexpected IOException with stream: 
@@ -581,7 +582,8 @@ Unexpected IOException with stream: d
 Unexpected IOException with stream: .
 
 # Created at 2024-05-27T19:09:47.911
-Unexpected IOException with stream: 
+Unexpected IOException with stream: 
+
 
 # Created at 2024-05-27T19:09:47.911
 Unexpected IOException with stream: 
@@ -930,7 +932,8 @@ Unexpected IOException with stream: e
 Unexpected IOException with stream: .
 
 # Created at 2024-05-27T19:09:47.978
-Unexpected IOException with stream: 
+Unexpected IOException with stream: 
+
 
 # Created at 2024-05-27T19:09:47.979
 Unexpected IOException with stream: 
@@ -1051,7 +1054,8 @@ Unexpected IOException with stream: y
 Unexpected IOException with stream: .
 
 # Created at 2024-05-27T19:09:48.004
-Unexpected IOException with stream: 
+Unexpected IOException with stream: 
+
 
 # Created at 2024-05-27T19:09:48.005
 Unexpected IOException with stream: 
@@ -1108,8 +1112,8 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 	at com.sparta.swaglabs.pom.util.DriverFactory.getDriver(DriverFactory.java:14)
@@ -1118,7 +1122,7 @@ remote stacktrace: Backtrace:
 
 
 # Created at 2024-05-27T19:09:53.589
-Unexpected IOException with stream:   [36mGiven [0m[36mI am on the Products page[0m                 [90m# com.sparta.swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()[0m
+Unexpected IOException with stream:   [36mGiven [0m[36mI am on the Products page[0m                 [90m# swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()[0m
 
 
 # Created at 2024-05-27T19:09:53.590
@@ -1151,7 +1155,7 @@ Unexpected IOException with stream: [32m[1m???????????????????????????????????
 [32m[1m?[0m                                                                                   [32m[1m?[0m
 [32m[1m?[0m src/test/resources/cucumber.properties:          [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m?[0m
 [32m[1m?[0m src/test/resources/junit-platform.properties:    [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m?[0m
-[32m[1m?????????????????????????????????????????????????????????????????????????????????????[0m
+[32m[1m?????????????????????????????????????????????????????????????????????????????????
 
 
 # Created at 2024-05-27T19:09:53.721

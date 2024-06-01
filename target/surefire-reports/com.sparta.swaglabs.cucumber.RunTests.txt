@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
-Test set: com.sparta.swaglabs.cucumber.RunTests
+Test set: swaglabs.cucumber.RunTests
 -------------------------------------------------------------------------------
-Tests run: 32, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 220.748 s <<< FAILURE! - in com.sparta.swaglabs.cucumber.RunTests
+Tests run: 32, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 220.748 s <<< FAILURE! - in swaglabs.cucumber.RunTests
 As a user, I want to sort products by name {A-Z}  Time elapsed: 4.909 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<N[AME (A TO] Z)> but was:<N[ame (A to] Z)>
 
