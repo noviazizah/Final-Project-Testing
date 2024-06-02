@@ -119,9 +119,9 @@ Adapun struktur projek yang diterapkan adalah sebagai berikut:
 Langkah-langkah untuk menginstal proyek ini pada lingkungan lokal:
 
 1. Clone repository ini
-   ```sh
+```
 git clone https://github.com/noviazizah/Final-Project-Testing.git
-   ``
+```
 2. Masuk ke direktori proyek:
 ```
 cd Final-Project-Testing
