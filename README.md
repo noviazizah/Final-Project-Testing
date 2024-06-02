@@ -28,9 +28,8 @@ SUT (Software Under Test) untuk sistem ini adalah API User Controller  pada webs
     Memperbarui data user berdasarkan ID dan mengembalikan data user yang telah diperbarui
     Body request: field data user yang akan diubah, kecuali ID dan email
 
-4   DELETE /user/{id}
+4.   DELETE /user/{id}
     Menghapus data user berdasarkan ID dan mengembalikan ID user yang telah dihapus
-
 
 
 ## Tools yang Digunakan
