@@ -1,5 +1,10 @@
-# Final Project Automation Testing SwagLabs dan Api User Controller
+# Final Project SwagLabs & Api User Controller Automation Testing 
 Repositori ini menyimpan source code pengujian automation untuk SwagLabs dan Api User Controller
+
+## Anggota Kelompok
+- Helsa Alika Femiani - 211524044
+- Novia Nur Azizah - 211524053
+- Regi Purnama - 211524057
 
 ## Software Under Test (SUT)
 1. Aplikasi Swag Labs
@@ -106,12 +111,6 @@ Adapun struktur projek yang diterapkan adalah sebagai berikut:
     └───README.md
 
 ```
-
-# Anggota Kelompok
-
-- Helsa Alika Femiani - 211524044
-- Novia Nur Azizah - 211524053
-- Regi Purnama - 211524057
 
 ## Instalasi Project
 
