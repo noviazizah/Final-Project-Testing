@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/features/apiusercontroller/createUser.feature"},
+        features = {"src/test/resources/features/apiusercontroller/updateUser.feature"},
         glue = {"apiusercontroller/stepdefs"},
         plugin = {
                 "pretty", 
