@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11615976100,
+              "duration": 15784901200,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-06-02T09:36:39.974Z",
+        "start_timestamp": "2024-06-02T10:40:02.960Z",
         "line": 6,
         "name": "Successfully create a user with title \"mr\"",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31240800,
+              "duration": 15627800,
               "status": "passed"
             },
             "line": 7,
@@ -52,6 +52,7 @@
           },
           {
             "result": {
+              "duration": 17129000,
               "status": "passed"
             },
             "line": 8,
@@ -69,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 32404796400,
+              "duration": 36552157400,
               "status": "passed"
             },
             "line": 9,
@@ -81,21 +82,441 @@
           },
           {
             "result": {
-              "duration": 207888100,
+              "duration": 296550400,
               "status": "passed"
             },
             "line": 10,
-            "name": "I should receive a successful response with the status code 200",
+            "name": "I should receive a response with the status code 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 60
+                  "offset": 49
                 }
               ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 133003100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T10:40:59.006Z",
+        "line": 12,
+        "name": "Successfully create a user with firstName \"Johnathan\"",
+        "description": "",
+        "id": "user-api-controller---create-user;successfully-create-a-user-with-firstname-\"johnathan\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am authorized with a valid app-id \"662718606cae037669dee7b6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"662718606cae037669dee7b6\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have a user payload with firstName \"Johnathan\" and other required fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnathan\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameAndOtherRequiredFields(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 949463400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should receive a response with the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 43408400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T10:41:00.366Z",
+        "line": 18,
+        "name": "Fail to create a user with empty email field",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-empty-email-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8002200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am authorized with a valid app-id \"662718606cae037669dee7b6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"662718606cae037669dee7b6\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6326400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I have a user payload with an empty email field",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithAnEmptyEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1214814700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8818000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should receive a response with the status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21919100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should contain an error message \"BODY_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BODY_NOT_VALID\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T10:41:02.551Z",
+        "line": 25,
+        "name": "Fail to create a user with invalid app-id",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-invalid-app-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am authorized with an invalid app-id \"12345678790abc1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678790abc1234567\"",
+                  "offset": 39
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAnInvalidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have a valid user payload",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidUserPayload()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1047748500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c400\u003e\n     but: was \u003c403\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(CreateUserSteps.java:160)\r\n\tat ✽.I should receive a response with the status code 400(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:29)\r\n",
+              "duration": 15625700,
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "I should receive a response with the status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the response should contain an error message \"APP_ID_NOT_EXIST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_NOT_EXIST\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4547200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T10:41:04.725Z",
+        "line": 32,
+        "name": "Fail to create a user with firstName exceeding max length",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-firstname-exceeding-max-length",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am authorized with a valid app-id \"662718606cae037669dee7b6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"662718606cae037669dee7b6\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15627300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I have a user payload with a firstName exceeding max length",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameExceedingMaxLength()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 973589400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should receive a response with the status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15625700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response should contain an error message \"BODY_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BODY_NOT_VALID\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ]
       }

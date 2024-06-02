@@ -63,7 +63,7 @@ public class CreateUserSteps {
         this.lastName = "Doe";
         this.picture = "http://example.com/picture6.jpg";
         this.gender = "male";
-        this.email = "johnathandoe111@example.com";
+        this.email = "johnathandoe461@example.com";
         this.dateOfBirth = "1985-07-15";
         this.phone = "777777777";
         this.street = "303 Oak St";
@@ -90,23 +90,6 @@ public class CreateUserSteps {
         this.timezone = "+7:00";
     }
 
-    @Given("I have a user payload with a non-string title")
-    public void iHaveAUserPayloadWithANonStringTitle() {
-        this.title = "123"; // Corrected to be a string value, although this will simulate a non-string title scenario for testing
-        this.firstName = "Emily";
-        this.lastName = "Winston";
-        this.picture = "http://example.com/picture1.jpg";
-        this.gender = "female";
-        this.email = "emily.winston9823@example.com";
-        this.dateOfBirth = "1995-05-20";
-        this.phone = "(987) 654-3210";
-        this.street = "456 Oak St";
-        this.city = "Los Angeles";
-        this.state = "CA";
-        this.country = "USA";
-        this.timezone = "-8:00";
-    }
-
     @Given("I am authorized with an invalid app-id {string}")
     public void iHaveAnInvalidAppId(String appID) {
         this.httpRequest.header("app-id", appID);
@@ -119,7 +102,7 @@ public class CreateUserSteps {
         this.lastName = "Madison";
         this.picture = "http://example.com/picture.jpg";
         this.gender = "female";
-        this.email = "grace.madison123@example.com";
+        this.email = "grace.madison223@example.com";
         this.dateOfBirth = "1990-01-01";
         this.phone = "1234567890";
         this.street = "123 Main Street";
@@ -136,7 +119,7 @@ public class CreateUserSteps {
         this.lastName = "Brown";
         this.picture = "http://example.com/picture4.jpg";
         this.gender = "male";
-        this.email = "michael.brow1212n@example.com";
+        this.email = "michael.brow112n@example.com";
         this.dateOfBirth = "1975-12-10";
         this.phone = "(444) 987-6543";
         this.street = "789 Elm St";
