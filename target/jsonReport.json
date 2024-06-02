@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12037832800,
+              "duration": 11615976100,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-06-01T23:23:20.952Z",
+        "start_timestamp": "2024-06-02T09:36:39.974Z",
         "line": 6,
         "name": "Successfully create a user with title \"mr\"",
         "description": "",
@@ -34,15 +34,15 @@
         "steps": [
           {
             "result": {
-              "duration": 33554300,
+              "duration": 31240800,
               "status": "passed"
             },
             "line": 7,
-            "name": "I am authorized with a valid app-id \"665b2b5479d0282f4782deae\"",
+            "name": "I am authorized with a valid app-id \"665c257a4ff6ee05ceaa8edf\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "val": "\"665c257a4ff6ee05ceaa8edf\"",
                   "offset": 36
                 }
               ],
@@ -69,485 +69,33 @@
           },
           {
             "result": {
-              "duration": 30912061700,
+              "duration": 32404796400,
               "status": "passed"
             },
             "line": 9,
-            "name": "I send a POST request to \"/user/create\"",
+            "name": "I send a POST request to create the user",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"/user/create\"",
-                  "offset": 25
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestTo(java.lang.String)"
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(CreateUserSteps.java:142)\r\n\tat ✽.I should receive a successful response with the status code 201(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:10)\r\n",
-              "duration": 1205434500,
-              "status": "failed"
+              "duration": 207888100,
+              "status": "passed"
             },
             "line": 10,
-            "name": "I should receive a successful response with the status code 201",
+            "name": "I should receive a successful response with the status code 200",
             "match": {
               "arguments": [
                 {
-                  "val": "201",
+                  "val": "200",
                   "offset": 60
                 }
               ],
               "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "the response should display the user id and details",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldDisplayTheUserIdAndDetails()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 78117800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have access to the User API Controller",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-01T23:24:09.140Z",
-        "line": 13,
-        "name": "Successfully create a user with firstName having length between 2 and 50",
-        "description": "",
-        "id": "user-api-controller---create-user;successfully-create-a-user-with-firstname-having-length-between-2-and-50",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 18064400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I am authorized with a valid app-id \"665b2b5479d0282f4782deae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"665b2b5479d0282f4782deae\"",
-                  "offset": 36
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I have a user payload with firstName length between 2 and 50",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameLengthBetween2And50()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 796005400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I send a POST request to \"/user/create\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"/user/create\"",
-                  "offset": 25
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(CreateUserSteps.java:142)\r\n\tat ✽.I should receive a successful response with the status code 201(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:17)\r\n",
-              "status": "failed"
-            },
-            "line": 17,
-            "name": "I should receive a successful response with the status code 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 60
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "the response should display the user id and details",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldDisplayTheUserIdAndDetails()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have access to the User API Controller",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-01T23:24:11.289Z",
-        "line": 20,
-        "name": "Successfully create a user with email as string",
-        "description": "",
-        "id": "user-api-controller---create-user;successfully-create-a-user-with-email-as-string",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I am authorized with a valid app-id \"665b2b5479d0282f4782deae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"665b2b5479d0282f4782deae\"",
-                  "offset": 36
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I have a user payload with email as string",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithEmailAsString()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1060380600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I send a POST request to \"/user/create\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"/user/create\"",
-                  "offset": 25
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(CreateUserSteps.java:142)\r\n\tat ✽.I should receive a successful response with the status code 201(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:24)\r\n",
-              "status": "failed"
-            },
-            "line": 24,
-            "name": "I should receive a successful response with the status code 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 60
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15438700,
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "the response should display the user id and details",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldDisplayTheUserIdAndDetails()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have access to the User API Controller",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-01T23:24:12.642Z",
-        "line": 27,
-        "name": "Successfully create a user with dateOfBirth as ISO date",
-        "description": "",
-        "id": "user-api-controller---create-user;successfully-create-a-user-with-dateofbirth-as-iso-date",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 15621500,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I am authorized with a valid app-id \"665b2b5479d0282f4782deae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"665b2b5479d0282f4782deae\"",
-                  "offset": 36
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 31003500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I have a user payload with dateOfBirth as ISO date",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithDateOfBirthAsISODate()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 664723400,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I send a POST request to \"/user/create\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"/user/create\"",
-                  "offset": 25
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(CreateUserSteps.java:142)\r\n\tat ✽.I should receive a successful response with the status code 201(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:31)\r\n",
-              "duration": 15630000,
-              "status": "failed"
-            },
-            "line": 31,
-            "name": "I should receive a successful response with the status code 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 60
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "the response should display the user id and details",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldDisplayTheUserIdAndDetails()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6899400,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have access to the User API Controller",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-01T23:24:13.888Z",
-        "line": 34,
-        "name": "Successfully create a user with phone number in any format",
-        "description": "",
-        "id": "user-api-controller---create-user;successfully-create-a-user-with-phone-number-in-any-format",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 32215400,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I am authorized with a valid app-id \"665b2b5479d0282f4782deae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"665b2b5479d0282f4782deae\"",
-                  "offset": 36
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8009500,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I have a user payload with phone number in any format",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithPhoneNumberInAnyFormat()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 698371000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "I send a POST request to \"/user/create\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"/user/create\"",
-                  "offset": 25
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(CreateUserSteps.java:142)\r\n\tat ✽.I should receive a successful response with the status code 201(file:///D:/Kuliah/Semester%206/PPL/Final%20Project/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:38)\r\n",
-              "duration": 15576600,
-              "status": "failed"
-            },
-            "line": 38,
-            "name": "I should receive a successful response with the status code 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 60
-                }
-              ],
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "the response should display the user id and details",
-            "match": {
-              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldDisplayTheUserIdAndDetails()"
-            },
-            "keyword": "And "
           }
         ]
       }

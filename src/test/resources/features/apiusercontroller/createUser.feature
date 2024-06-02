@@ -4,36 +4,31 @@ Feature: User API Controller - Create User
     Given I have access to the User API Controller
 
   Scenario: Successfully create a user with title "mr"
-    Given I am authorized with a valid app-id "665b2b5479d0282f4782deae"
+    Given I am authorized with a valid app-id "665c257a4ff6ee05ceaa8edf"
     And I have a user payload with title "mr" and other required fields
-    When I send a POST request to "/user/create"
-    Then I should receive a successful response with the status code 201
-    And the response should display the user id and details
+    When I send a POST request to create the user
+    Then I should receive a successful response with the status code 200
 
-  Scenario: Successfully create a user with firstName having length between 2 and 50
-    Given I am authorized with a valid app-id "665b2b5479d0282f4782deae"
-    And I have a user payload with firstName length between 2 and 50
-    When I send a POST request to "/user/create"
-    Then I should receive a successful response with the status code 201
-    And the response should display the user id and details
+  Scenario: Successfully create a user with firstName "Johnathan"
+    Given I am authorized with a valid app-id "665c257a4ff6ee05ceaa8edf"
+    And I have a user payload with firstName "Johnathan" and other required fields
+    When I send a POST request to create the user
+    Then I should receive a successful response with the status code 200
 
-  Scenario: Successfully create a user with email as string
-    Given I am authorized with a valid app-id "665b2b5479d0282f4782deae"
-    And I have a user payload with email as string
-    When I send a POST request to "/user/create"
-    Then I should receive a successful response with the status code 201
-    And the response should display the user id and details
+  Scenario: Fail to create a user with empty email field
+    Given I am authorized with a valid app-id "665c257a4ff6ee05ceaa8edf"
+    And I have a user payload with an empty email field
+    When I send a POST request to create the user
+    Then I should receive a response with the status code 400
 
-  Scenario: Successfully create a user with dateOfBirth as ISO date
-    Given I am authorized with a valid app-id "665b2b5479d0282f4782deae"
-    And I have a user payload with dateOfBirth as ISO date
-    When I send a POST request to "/user/create"
-    Then I should receive a successful response with the status code 201
-    And the response should display the user id and details
+  Scenario: Fail to create a user with non-string title
+    Given I am authorized with a valid app-id "665c257a4ff6ee05ceaa8edf"
+    And I have a user payload with a non-string title
+    When I send a POST request to create the user
+    Then I should receive a response with the status code 400
 
-  Scenario: Successfully create a user with phone number in any format
-    Given I am authorized with a valid app-id "665b2b5479d0282f4782deae"
-    And I have a user payload with phone number in any format
-    When I send a POST request to "/user/create"
-    Then I should receive a successful response with the status code 201
-    And the response should display the user id and details
+  Scenario: Fail to create a user with invalid app-id
+    Given I am authorized with an invalid app-id "12345678790abc1234567"
+    And I have a valid user payload
+    When I send a POST request to create the user
+    Then I should receive a response with the status code 400

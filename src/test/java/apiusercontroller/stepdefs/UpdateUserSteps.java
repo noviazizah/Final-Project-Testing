@@ -20,7 +20,6 @@ public class UpdateUserSteps {
         this.request = RestAssured.given().contentType("application/json");
     }
     
-
     @Given("the app-id {string} is authorized in the header")
     public void theAppIdIsAuthorizedInTheHeader(String appId) {
         this.request.header("app-id", appId);
@@ -35,7 +34,7 @@ public class UpdateUserSteps {
     public void iSendAPUTRequestToModifyTheUsersFieldTo(String field, String newValue) {
         String path = "/user/{id}";
         String body = String.format("{\"%s\": \"%s\"}", field, newValue);
-        response = this.request.body(body).put(path);
+        response = this.request.body(body).put(path); 
     }
 
     @Then("the response should have a status code of {int}")
